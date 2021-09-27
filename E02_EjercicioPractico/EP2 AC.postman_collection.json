@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "8f07a57e-02e6-49ce-a60b-22e63f2399b3",
+		"name": "EP2 AC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Monumento",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/monumento/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"monumento",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Nuevo monumento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 4,\r\n        \"codigoPais\": 34,\r\n        \"nombrePais\": \"España\",\r\n        \"nombreCiudad\": \"Barcelona\",\r\n        \"latitud\": \"41º 24' 13'' N\",\r\n        \"longitud\": 253.54364,\r\n        \"nombreMonumento\": \"Templo Expiatorio de la Sagrada Familia\",\r\n        \"descripcion\": \"El Templo Expiatorio de la Sagrada Familia conocido simplemente como la Sagrada Familia, es una basílica católica de Barcelona (España), diseñada por el arquitecto Antoni Gaudí. Iniciada en 1882, todavía está en construcción. \",\r\n        \"urlFoto\": \"https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/SF_lago_2021.jpg/280px-SF_lago_2021.jpg\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/monumento/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"monumento",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Monumento",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 2,\r\n        \"codigoPais\": 7,\r\n        \"nombrePais\": \"Rusia\",\r\n        \"nombreCiudad\": \"Moscú\",\r\n        \"latitud\": \"55º 45' 00'' N\",\r\n        \"longitud\": 353.543673,\r\n        \"nombreMonumento\": \"Gran palacio de Kremlin\",\r\n        \"descripcion\": \"El Gran Palacio del Kremlin (en ruso: Большой Кремлёвский дворец) es la residencia oficial del presidente de Rusia. Está ubicado en la parte sureste del Kremlin de Moscú, en la cima de la colina de Pinar.\",\r\n        \"urlFoto\": \"https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Grand_Kremlin_Palace%2C_Moscow.jpg/250px-Grand_Kremlin_Palace%2C_Moscow.jpg\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/monumento/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"monumento",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Monumento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/monumento/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"monumento",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
